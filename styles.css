@@ -1,6 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(to bottom, #2C3E50, #D8E8F0);
+    background: linear-gradient(to bottom, #A2C2E2, #E6F0F9); /* Softer pastel blues */
     color: #F9F9F9;
     margin: 0;
     padding: 0;
@@ -11,12 +11,12 @@ body {
 }
 
 header {
-    background-color: rgba(44, 62, 80, 0.9);
+    background-color: rgba(44, 62, 80, 0.8); /* Slightly lighter for a warmer touch */
     color: #F9F9F9;
     padding: 20px;
     text-align: center;
     width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 main {
@@ -24,9 +24,9 @@ main {
     flex: 1;
     width: 90%;
     max-width: 800px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2); /* Slightly more opaque for warmth */
     border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
     margin-top: 20px;
     text-align: center;
 }
@@ -34,10 +34,10 @@ main {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: rgba(44, 62, 80, 0.9);
+    background-color: rgba(44, 62, 80, 0.8); /* Matches header */
     color: #F9F9F9;
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.4);
 }
