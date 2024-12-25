@@ -1,6 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(to bottom, #5D6D7E, #B3C5D6); /* Slate Blue to Soft Gray-Blue gradient */
+    background: linear-gradient(to bottom, #F4A300, #D68E3B); /* Rich orange to golden brown gradient */
     color: #F9F9F9;
     margin: 0;
     padding: 0;
@@ -8,10 +8,11 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 header {
-    background-color: #2C3E50; /* Navy Blue background for header */
+    background-color: #8E5A3A; /* Warm brown for header */
     color: #F9F9F9;
     padding: 20px;
     text-align: center;
@@ -24,9 +25,9 @@ main {
     flex: 1;
     width: 90%;
     max-width: 800px;
-    background: rgba(255, 255, 255, 0.15); /* Soft white background with a touch of transparency */
+    background: rgba(255, 255, 255, 0.2); /* Soft white background with warm transparency */
     border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Soft, warm shadow */
     margin-top: 20px;
     text-align: center;
 }
@@ -34,7 +35,7 @@ main {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #2C3E50; /* Navy Blue footer */
+    background-color: #8E5A3A; /* Matches header */
     color: #F9F9F9;
     position: fixed;
     bottom: 0;
