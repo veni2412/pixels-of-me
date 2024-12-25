@@ -8,101 +8,38 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh; /* Ensure the body covers the whole screen */
 }
 
 /* Header */
-h1 {
-    font-family: 'Dancing Script', cursive; /* Handwritten-style font for headers */
-    color: #C97B4B; /* Warm brown header */
+header {
+    background-color: #C97B4B; /* Warm Brown Header */
+    color: white;
+    padding: 30px;
     text-align: center;
-    padding: 20px;
+    font-family: 'Dancing Script', cursive; /* Handwritten-style font for cozy feel */
+    font-size: 2rem; /* Slightly larger text */
 }
 
-/* Links and Buttons */
-a, .button {
-    color: #F9A6B5; /* Dusty Rose for links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-a:hover, .button:hover {
-    color: #F4C430; /* Soft Gold on hover */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Gentle glow effect */
-}
-
-/* Main Content Section */
-.main-content {
-    max-width: 1000px;
-    padding: 20px;
-    background-color: #FFF5E1; /* Cream background for the content section */
+/* Main Content */
+main {
+    padding: 30px;
+    background-color: #FFF5E1; /* Cream background for content section */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     border-radius: 10px;
     margin-top: 20px;
-}
-
-/* Pixel-Style Borders */
-.pixel-border {
-    border: 4px solid #2D9C9F; /* Teal for a pixel-inspired border */
-    padding: 10px;
-    border-radius: 8px;
+    max-width: 900px; /* Limit width for cozy layout */
+    text-align: center; /* Center content for a more inviting feel */
 }
 
 /* Footer */
 footer {
-    margin-top: 40px;
     text-align: center;
-    padding: 20px;
-    background-color: #C97B4B; /* Warm brown footer */
-    color: #FFF;
-}
-
-footer a {
-    color: #FFF;
-    font-weight: normal;
-}
-
-/* Subtle Animations */
-.fade-in {
-    animation: fadeIn 1s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Buttons */
-.button {
-    padding: 12px 24px;
-    background-color: #F9A6B5; /* Dusty Rose button */
-    color: #FFF;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #FF6F61; /* Coral button hover effect */
-}
-
-/* Images with Soft Borders */
-img {
-    border-radius: 15px;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around images */
-}
-
-/* Text Styling */
-p {
-    line-height: 1.6;
-    font-size: 18px;
-    color: #2C3E50; /* Dark gray text for paragraphs */
+    padding: 10px;
+    background-color: #C97B4B; /* Warm Brown footer */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
 }
