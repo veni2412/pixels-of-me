@@ -1,27 +1,108 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', sans-serif; /* Soft rounded font */
+    background-color: #F5E1A4; /* Light Beige background for coziness */
+    color: #2C3E50; /* Dark gray text for good readability */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+/* Header */
+h1 {
+    font-family: 'Dancing Script', cursive; /* Handwritten-style font for headers */
+    color: #C97B4B; /* Warm brown header */
     text-align: center;
-}
-
-main {
     padding: 20px;
 }
 
-footer {
-    text-align: center;
+/* Links and Buttons */
+a, .button {
+    color: #F9A6B5; /* Dusty Rose for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover, .button:hover {
+    color: #F4C430; /* Soft Gold on hover */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Gentle glow effect */
+}
+
+/* Main Content Section */
+.main-content {
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #FFF5E1; /* Cream background for the content section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Pixel-Style Borders */
+.pixel-border {
+    border: 4px solid #2D9C9F; /* Teal for a pixel-inspired border */
     padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #C97B4B; /* Warm brown footer */
+    color: #FFF;
+}
+
+footer a {
+    color: #FFF;
+    font-weight: normal;
+}
+
+/* Subtle Animations */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Buttons */
+.button {
+    padding: 12px 24px;
+    background-color: #F9A6B5; /* Dusty Rose button */
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FF6F61; /* Coral button hover effect */
+}
+
+/* Images with Soft Borders */
+img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around images */
+}
+
+/* Text Styling */
+p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #2C3E50; /* Dark gray text for paragraphs */
 }
