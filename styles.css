@@ -1,45 +1,43 @@
-/* General Styles */
 body {
-    font-family: 'Nunito', sans-serif; /* Soft rounded font */
-    background-color: #F5E1A4; /* Light Beige background for coziness */
-    color: #2C3E50; /* Dark gray text for good readability */
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to bottom, #2C3E50, #D8E8F0);
+    color: #F9F9F9;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Ensure the body covers the whole screen */
+    min-height: 100vh;
 }
 
-/* Header */
 header {
-    background-color: #C97B4B; /* Warm Brown Header */
-    color: white;
-    padding: 30px;
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #F9F9F9;
+    padding: 20px;
     text-align: center;
-    font-family: 'Dancing Script', cursive; /* Handwritten-style font for cozy feel */
-    font-size: 2rem; /* Slightly larger text */
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Main Content */
 main {
-    padding: 30px;
-    background-color: #FFF5E1; /* Cream background for content section */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
-    max-width: 900px; /* Limit width for cozy layout */
-    text-align: center; /* Center content for a more inviting feel */
+    text-align: center;
 }
 
-/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #C97B4B; /* Warm Brown footer */
-    color: white;
+    padding: 15px;
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #F9F9F9;
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 0.9rem;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
 }
