@@ -1,44 +1,132 @@
+/* Global Styles */
 body {
-    font-family: 'Nunito', sans-serif;
-    background: linear-gradient(to bottom, #F4A300, #D68E3B); /* Rich orange to golden brown gradient */
-    color: #F9F9F9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f9fb; /* Soft white background */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Dark gray text for readability */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body takes up full viewport height */
 }
 
+/* Header Section */
 header {
-    background-color: #8E5A3A; /* Warm brown for header */
-    color: #F9F9F9;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  background-color: #e7a6b0; /* Soft pink background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-main {
-    padding: 20px;
-    flex: 1;
-    width: 90%;
-    max-width: 800px;
-    background: rgba(255, 255, 255, 0.2); /* Soft white background with warm transparency */
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Soft, warm shadow */
-    margin-top: 20px;
-    text-align: center;
+/* Header Text */
+header h1 {
+  font-family: 'Playfair Display', serif; /* Elegant serif font */
+  font-size: 2.5em;
 }
 
+/* Navigation Styles */
+nav ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Horizontally aligns the menu items */
+  margin-right: 15px; /* Adds space between items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes underline from links */
+  color: white;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  color: #f2c5c5; /* Soft peach color for hover effect */
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #d1e6f0; /* Light blue background */
+  flex-grow: 1; /* This will allow the home section to take up remaining space */
+  overflow: hidden;
+}
+
+/* Text content styling */
+#home .content {
+  max-width: 50%;
+  text-align: left;
+}
+
+#home h2 {
+  font-family: 'Playfair Display', serif;
+  color: #e7a6b0;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Image styling */
+#home .image img {
+  max-width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  background-color: #e7a6b0;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a8c6e1; /* Light blue hover effect */
+}
+
+/* Footer Section */
 footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #8E5A3A; /* Matches header */
-    color: #F9F9F9;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.4);
+  padding: 10px 0; /* Reduce top and bottom padding */
+  text-align: center; /* Center the text */
+  background-color: #e7a6b0; /* Optional background color */
+  color: #333; /* Text color */
+}
+
+footer p {
+  margin: 0; /* Remove any extra margin around the text */
+}
+
+
+/* Dividers (HR) */
+hr {
+  border: 1px solid #d1e6f0;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .intro {
+    padding: 20px;
+  }
 }
